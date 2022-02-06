@@ -21,14 +21,6 @@ public class HotelCollection {
         }
     }
 
-    public void remove(int id) {
-        for (int i = 0; i < hotels.length; i++) {
-            if (hotels[i] != null && hotels[i].getId() == id) {
-                hotels[i] = null;
-                break;
-            }
-        }
-    }
 
     public Hotel[] getHotels() {
         Hotel[] nonNullHotels = filterOutNullElements();
